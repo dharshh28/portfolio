@@ -1,0 +1,11 @@
+// Simple greeting in console
+console.log("Welcome to Dharshini P Portfolio");
+
+// Smooth scroll effect
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener("click", function(e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute("href"))
+      .scrollIntoView({ behavior: "smooth" });
+  });
+});
